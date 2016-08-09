@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Button Game</title>
+<link rel="stylesheet" type="text/css" href="not the game/theWayItLooks.css">
+<script type="text/javascript" src="not the game/theWayitWorks.js"></script>
+</head>
+<body>
+<div id="background">
+<div id="left" onmouseover="leftTheEntireGame()"></div>
+<div id="right" onmouseover="leftTheEntireGame()"></div>
+<div id="theEntireGame">
+
+<!-- life -->
+<input id="lives" type="text" value="3" style="display: none;">
+<div id="healthBar" value="3">
+<img id="heart1" class="hearts" src="http://rsmg.pbsrc.com/albums/v222/Freefreakster/Pixel%20Art/ForumFHeart.gif~c200" alt="heart" >
+<img id="heart2" class="hearts" src="http://rsmg.pbsrc.com/albums/v222/Freefreakster/Pixel%20Art/ForumFHeart.gif~c200" alt="heart" >
+<img id="heart3" class="hearts" src="http://rsmg.pbsrc.com/albums/v222/Freefreakster/Pixel%20Art/ForumFHeart.gif~c200" alt="heart" >
+<img id="deathHeart" src="not the game/othershitidk/die.gif" alt="heart" >
+</div>
+
+
+<!-- skipper 	
+
+	<div class="start" id = "divstart">
+		<h1>Button Game</h1>
+		<button class="normalButton" id="start" onclick="start()">click to begin</button>
+	</div>	
+	
+	<div class="hidden" id="divlvl1">
+		<h1>Chapter One</h1>
+		<p>click that button</p>
+		<div class="ch1">
+			<button id="lvl1" onclick="Victory(); setTimeout(victory1, 1500); setTimeout(endVictory, 1500);" >dont click me</button>
+		</div>
+	</div>
+	
+	<div class="hidden" id="divlvl2">
+		<h1>Chapter Two</h1>
+		<p>click that button</p>
+		<div class="ch2" id="ch2prank">
+			<button class="button2" id="lvl2" onmouseover="lvl2prank()" onclick="Victory(); setTimeout(victory2, 1500); setTimeout(endVictory, 1500);" >dont click me</button>
+		</div>
+	</div>
+
+	<div class="hidden" id="divlvl3">
+		<h1>Chapter Three</h1>
+		<p>click that button</p>
+		<div class="ch1">
+			<button class="button3" id="lvl3" onclick="Victory(); setTimeout(victory3, 1500); setTimeout(endVictory, 1500);" >how did you know</button>
+		</div>
+	</div>
+-->
+	<div class="" id="divlvl4">
+		<h1>Chapter Four</h1>
+		<p>click that button</p>
+		<div id="lvl4space"></div>
+		<div id="divhelperbutton4">
+			<button>its not me</button> 
+		</div>
+		<div id="skinnybridge"></div>
+		<div id="divbutton4">
+			<button id="button4" id="lvl4" onclick="Victory(); setTimeout(victory4, 1500); setTimeout(endVictory, 1500);" >dont click me please</button> 
+		</div>
+	</div>
+
+	<div class="hidden" id="divlvl5">
+		<h1>Chapter Five</h1>
+		<p>click that button </br> but be careful </br> if you touch the lava you'll lose a life</p>
+		<div id="lvl5space"></div>
+		<div id="divhelperbutton5">
+			<button onclick="lvl5prank()" id="lvl5helperbutton" >you can click me i guess</button> 
+		</div>
+		<div id="lvl5space"></div>
+		<div id="lvl5obstacle">
+			
+			<div id="div1" onmouseover="loseLife()">danger</div>
+			<div id="div2" onmouseover="loseLife()">crisis</div>
+			<div id="div3" onmouseover="loseLife()">emergency</div>
+			<div id="div4" onmouseover="loseLife()">peril</div>
+			<div id="div5" onmouseover="loseLife()">insecurity</div>
+		
+		</div>
+		<div id="lvl5space"></div>
+		<div class="ch5">
+			<button id="button5" onclick="Victory(); fire.stop(); setTimeout(victory5, 1500); " >please stop</button>
+		</div>
+	</div>
+	
+</div>
+<div id="bottom" onmouseover="leftTheEntireGame()"></div>
+</div>
+
+<!-- The Modal -->
+<div id="victoryScreen" class="modal">
+
+  <!-- Modal content -->
+  <div id="victoryDiv" class="modal-content">
+    <p id="victoryText">victory</p>
+  </div>
+</div>
+</body>
+</html>

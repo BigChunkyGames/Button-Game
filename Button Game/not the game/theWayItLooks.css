@@ -1,0 +1,239 @@
+#theEntireGame {
+	margin:0 auto;
+	position: static;
+	text-align: center;
+	border: solid green;
+	width: 20%;
+	padding-bottom: 10px;
+	background-color: white;
+	transition: background-color 4s;
+	-webkit-transition: background-color 4s;
+}
+#background {
+	background-color: white;
+	height: 100vh;
+	transition: 0s;
+	-webkit-transition: 0s;
+}
+#left {
+	float: left;
+	width: 37%;
+	height: 100%
+}
+#right {
+	float: right;
+	width: 37%;
+	height: 100%
+}
+#bottom {
+	float: center;
+	width: 100%;
+	height: 10%
+}
+#healthBar{
+	padding-top: 10px;
+	margin:auto;
+	text-align: center;
+	display: block;
+}	
+.hearts {
+	height: 30px;
+	width: 30px;
+	display: none;
+}	
+#deathHeart {
+	position: absolute;
+	top: 17px;
+	height: 45px;
+	width: 50px;
+	display: none;
+}	
+.start {
+	display: block;
+}
+.ch1 {
+	padding-top: 200px;
+}
+.hidden {
+	display: none;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	text-align: center;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: VictoryMove;
+    -webkit-animation-duration: 1.5s;
+    animation-name: VictoryMove;
+    animation-duration: 1.5s
+}
+
+/* Add Animation */
+@-webkit-keyframes VictoryMove {
+    0% {top:-300px; opacity:0}
+    20% {top:0; opacity:1}
+	80% {top:0; opacity:1}
+	100% {top:500px; opacity:0}
+}
+
+@keyframes VictoryMove {
+    0% {top:-300px; opacity:0}
+    20% {top:0; opacity:1}
+	80% {top:0; opacity:1}
+	100% {top:500px; opacity:0}
+}
+.ch2 {
+	padding-top: 300px;
+}
+.button2 {
+	padding: 0px;
+}
+.button3 {
+	background: white;
+    border: none ;
+    color: white;
+	transition: .1s;
+}
+.button3:hover {
+	background: rgb(250,250,250);
+	color: rgb(230,230,230);
+	border: default !important;
+}
+.ch4 {
+	padding-top: 200px;
+	padding-right: 200px;
+}
+#lvl4space {
+	padding-bottom:20px;
+}	
+#divhelperbutton4 {
+	visibility: visible;
+	width: 72px;
+	margin:auto;
+}
+#divbutton4 {
+	visibility: hidden;
+
+}
+#skinnybridge {
+	visibility: hidden;
+	background-color: blue;
+	margin: auto;
+	width: 10px;
+	padding-right: 2px;
+	padding-left: 2px;
+	height: 300px;
+}
+#divhelperbutton4:hover ~ #divbutton4 {
+	visibility: visible;
+}
+#divhelperbutton4:hover ~ #skinnybridge {
+	visibility: visible;
+}
+#skinnybridge:hover ~ #divbutton4 {
+	visibility: visible;
+}
+#skinnybridge:hover {
+	visibility: visible;
+}
+#divbutton4:hover {
+	visibility: visible;
+}
+#divlvl5 {
+
+}
+#divhelperbutton5 {
+	text-align: left;
+	padding-left: 20px;
+}
+#lvl5space {
+	padding-bottom:100px;
+}	
+#div1, #div2, #div3, #div4, #div5 {
+    width: 50%;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 2s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 2s infinite;
+	text-align: center;
+	background-image: url("othershitidk/lava.gif") !important;
+}
+
+/* Chrome, Safari, Opera */
+#div1 {-webkit-animation-timing-function: linear; -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */ animation-delay: 1s;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;     -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */ animation-delay: 1s;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out; -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */ animation-delay: 1s;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    0% {left: 0px;}
+    50% {left: 12.5vw;}
+	100% {left: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0% {left: 0px;}
+    50% {left: 12.5vw;}
+	100% {left: 0px;}
+}
+#button5 {
+	visibility: hidden;
+}
+#lvl5obstacle {
+	visibility: hidden;
+}
+#divhelperbutton5 {
+	
+}
+#divhelperbutton5 {
+	
+}
+#divhelperbutton5 {
+	
+}
+#divhelperbutton5 {
+	
+}
+#divhelperbutton5 {
+	
+}
+#divhelperbutton5 {
+	
+}
+#divhelperbutton5 {
+	
+}
+#divhelperbutton5 {
+	
+}
