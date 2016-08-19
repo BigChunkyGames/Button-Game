@@ -21,7 +21,7 @@
 </div>
 
 
-<!-- skipper 	-->
+	
 
 	<div class="start" id = "divstart">
 		<h1>Button Game</h1>
@@ -55,24 +55,27 @@
 	<div class="hidden" id="divlvl4">
 		<h1>Chapter Four</h1>
 		<p>click that button</p>
-		<div id="lvl4space"></div>
+		<div class="space20px"></div>
 		<div id="divhelperbutton4">
 			<button>its not me</button> 
 		</div>
 		<div id="skinnybridge"></div>
 		<div id="divbutton4">
 			<button id="button4" id="lvl4" onclick="Victory(); setTimeout(victory4, 1500); setTimeout(endVictory, 1500);" >dont click me please</button> 
+			<div class="space20px"></div>
+
 		</div>
 	</div>
 
 	<div class="hidden" id="divlvl5">
 		<h1>Chapter Five</h1>
 		<p>click that button </br> but be careful </br> if you touch the lava you'll lose a life</p>
-		<div id="lvl5space"></div>
+		<div class="space20px"></div>
+		<div class="space20px"></div>
 		<div id="divhelperbutton5">
 			<button onclick="lvl5prank()" id="lvl5helperbutton" >you can click me i guess</button> 
 		</div>
-		<div id="lvl5space"></div>
+		<div class="space100px"></div>
 		<div id="lvl5obstacle">
 			
 			<div id="div1" onmouseover="loseLife()">danger</div>
@@ -82,10 +85,39 @@
 			<div id="div5" onmouseover="loseLife()">insecurity</div>
 		
 		</div>
-		<div id="lvl5space"></div>
-		<div class="ch5">
-			<button id="button5" onclick="Victory(); fire.stop(); setTimeout(victory5, 1500); " >please stop</button>
+		<div class="space100px"></div>
+		<div>
+			<button id="button5" onclick="Victory(); fire.stop(); setTimeout(victory5, 1500); setTimeout(endVictory, 1500); " >please stop</button>
 		</div>
+	</div>
+
+	<div class="hidden" id="divlvl6">
+		<h1>Chapter Six</h1>
+		<p>click that button</p>
+		<div class="space20px"></div>
+
+		<div class="space100px"></div>
+			<button class="rotatingButton2">nope</button>
+			<button class="rotatingButton3">wrong button m8</button>
+		<div class="space100px"></div>
+		<div>
+			<button class="rotatingButton1"id="button6" onclick="Victory(); setTimeout(victory6, 1500); setTimeout(endVictory, 1500); " >oh no</button>
+			<button class="rotatingButton4">incorrect</button>
+			<button class="rotatingButton5">not me</button>
+			<button class="rotatingButton6" onclick="loseLife()">if you click me youll literally die</button>
+			<button class="rotatingButton7">wrong</button>
+		</div>
+	</div>
+	
+	<div class="hidden" id="divlvl7">
+		<h1>Chapter Seven</h1>
+		<p>click that button</p>
+		<div class="space100px"></div>
+			<button id="button7" >not my children</button>
+		<div class="space100px"></div>
+			<button id="child1" onclick="killChild1(); victory7check(); ">daddy</button><img id="deathHeartChild1" src="not the game/othershitidk/die.gif" alt="heart" >
+			<button id="child2" onclick="killChild2(); victory7check(); ">daddy please help us</button><img id="deathHeartChild2" src="not the game/othershitidk/die.gif" alt="heart" >
+		<div class="space100px"></div>
 	</div>
 	
 </div>

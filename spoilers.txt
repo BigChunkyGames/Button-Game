@@ -3,10 +3,11 @@
 3 hidden
 4 show hidden paths
 5 dont touch the lava or lose life
-6 button moves in circle on hover
-7 dont move
+6 clusterfuck of buttons
+7 button cannon is firing buttons you cant touch
 8 move mouse down moving bridge
 9 elephants are scared of mice
-10 boss fite rapidly chaging backgrounf (w3s game?) unlock level select
+10 boss fite rapidly chaging backgrounf (w3s game?) 
+Chest - unlock level select
 11 introduce right click srtrat
 12 

@@ -41,13 +41,20 @@
 	width: 30px;
 	display: none;
 }	
-#deathHeart {
-	position: absolute;
-	top: 17px;
-	height: 45px;
-	width: 50px;
+#deathHeart, #deathHeartChild1, #deathHeartChild2 {
 	display: none;
 }	
+#deathHeart {
+	top: 17px;
+	position: absolute;
+	height: 45px;
+	width: 50px;
+}	
+#deathHeartChild1, #deathHeartChild2 {
+	display: none;
+	height: 30px;
+	width: auto;	
+}
 .start {
 	display: block;
 }
@@ -122,7 +129,7 @@
 	padding-top: 200px;
 	padding-right: 200px;
 }
-#lvl4space {
+.space20px {
 	padding-bottom:20px;
 }	
 #divhelperbutton4 {
@@ -165,8 +172,8 @@
 	text-align: left;
 	padding-left: 20px;
 }
-#lvl5space {
-	padding-bottom:100px;
+.space100px {
+	height: 100px;
 }	
 #div1, #div2, #div3, #div4, #div5 {
     width: 50%;
@@ -213,14 +220,195 @@
 #lvl5obstacle {
 	visibility: hidden;
 }
-#divhelperbutton5 {
-	
+
+/* LEVEL 6 */
+
+.rotatingButton1 {
+	width: 120px;
+    height: 40px;
+	position: relative;
+    -webkit-animation-name: rotb1; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+    animation-name: rotb1;
+    animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	z-index: 0;
 }
-#divhelperbutton5 {
-	
+@keyframes rotb1 {
+    0%   {left:0px; top:30px; transform: rotate(0deg); }
+    25%  {left:200px; top:200px;transform: rotate(90deg);}
+    50%  {left:-100px; top:0px;transform: rotate(180deg);}
+	75%  {left:-150px; top:-20px;transform: rotate(270deg);}
+    100% {left:0px; top:30px;transform: rotate(360deg);}
 }
-#divhelperbutton5 {
-	
+/* Standard syntax */
+@-webkit-keyframes rotb1 {
+    0%   {left:0px; top:30px; transform: rotate(0deg); }
+    25%  {left:200px; top:200px;transform: rotate(90deg);}
+    50%  {left:-100px; top:0px;transform: rotate(180deg);}
+	75%  {left:-150px; top:-20px;transform: rotate(270deg);}
+    100% {left:0px; top:30px;transform: rotate(360deg);}
+}
+.rotatingButton2 {
+	width: 100px;
+    height: 30px;
+	position: relative;
+	background-color: yellow;
+    -webkit-animation-name: rotb2; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+    animation-name: rotb2;
+    animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes rotb2 {
+    0%   {left:-30px; top:0; transform: rotate(-30deg); }
+    25%  {left:-30px; top:0;transform: rotate(30deg);}
+    50%  {left:-30px; top:0;transform: rotate(-30deg);}
+	75%  {left:-30px; top:0;transform: rotate(30deg);}
+    100% {left:-30px; top:0;transform: rotate(-30deg);}
+}
+
+/* Standard syntax */
+@-webkit-keyframes rotb2 {
+    0%   {left:-30px; top:0; transform: rotate(-30deg); }
+    25%  {left:-30px; top:0;transform: rotate(30deg);}
+    50%  {left:-30px; top:0;transform: rotate(-30deg);}
+	75%  {left:-30px; top:0;transform: rotate(30deg);}
+    100% {left:-30px; top:0;transform: rotate(-30deg);}
+}
+.rotatingButton3 {
+	width: 300px;
+    height: 30px;
+	position: relative;
+	background-color: green;
+    -webkit-animation-name: rotb3; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 20s; /* Chrome, Safari, Opera */
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+    animation-name: rotb3;
+    animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes rotb3 {
+    0%   {left:-240px; top:-240px; transform: rotate(0deg); }
+    25%  {left:-240px; top:240px;transform: rotate(-90deg);}
+    50%  {left:240px; top:240px;transform: rotate(-180deg);}
+	75%  {left:240px; top:-240px;transform: rotate(-270deg);}
+    100% {left:-240px; top:-240px;transform: rotate(-360deg);}
+}
+
+/* Standard syntax */
+@-webkit-keyframes rotb3 {
+    0%   {left:-240px; top:-240px; transform: rotate(0deg); }
+    25%  {left:-240px; top:240px;transform: rotate(-90deg);}
+    50%  {left:240px; top:240px;transform: rotate(-180deg);}
+	75%  {left:240px; top:-240px;transform: rotate(-270deg);}
+    100% {left:-240px; top:-240px;transform: rotate(0deg);}
+}
+.rotatingButton4 {
+	width: 90px;
+	height: 40px;
+	background-color: #696605;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin: -20px;
+	animation: rotb4 3s infinite linear;
+}
+@keyframes rotb4 {
+	from {
+		transform: rotate(0deg)
+		           translate(-150px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-150px) 
+		           rotate(-360deg);
+	}
+}
+.rotatingButton5 {
+	width: 10px;
+    height: 200px;
+	position: relative;
+	background-color: #5F2505;
+    -webkit-animation-name: rotb5; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+    animation-name: rotb5;
+    animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes rotb5 {
+    0%   {left:-240px; top:-240px; transform: rotate(0deg); }
+    25%  {left:-240px; top:240px;transform: rotate(-90deg);}
+    50%  {left:240px; top:240px;transform: rotate(-180deg);}
+	75%  {left:240px; top:-240px;transform: rotate(-270deg);}
+    100% {left:-240px; top:-240px;transform: rotate(-360deg);}
+}
+
+/* Standard syntax */
+@-webkit-keyframes rotb5 {
+    0%   {left:-240px; top:-240px; transform: rotate(0deg); }
+    25%  {left:-240px; top:240px;transform: rotate(-90deg);}
+    50%  {left:240px; top:240px;transform: rotate(-180deg);}
+	75%  {left:240px; top:-240px;transform: rotate(-270deg);}
+    100% {left:-240px; top:-240px;transform: rotate(0deg);}
+}
+.rotatingButton6 {
+	width: 70px;
+    height: 90px;
+	position: relative;
+	background-color: red;
+	top: 200px;
+	left: 350px;
+}
+.rotatingButton7 {
+	width: 60px;
+    height: 30px;
+	right: 320px;
+	top: 140px;
+	position: relative;
+	background-color: #820078;
+    -webkit-animation-name: rotb7; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: .2s; /* Chrome, Safari, Opera */
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+    animation-name: rotb7;
+    animation-duration: .2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes rotb7 {
+    0%   {transform: rotate(0deg); }
+    100% {transform: rotate(360deg);}
+}
+
+/* Standard syntax */
+@-webkit-keyframes rotb7 {
+    0%   {transform: rotate(0deg); }
+    100% {transform: rotate(360deg);}
+}
+#child1, #deathHeartChild1 {
+	left:150px;
+	position: relative;
+	font-size: 10px;
+	background-color: #C7E6F0;
+}
+#child2, #deathHeartChild2 {
+	right:150px;
+	position: relative;
+	font-size: 10px;
+	background-color: #F2C4E1;
 }
 #divhelperbutton5 {
 	

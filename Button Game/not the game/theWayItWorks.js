@@ -92,17 +92,55 @@ function loseLife() {
 }
 function stopHeartDying() {
 	document.getElementById('deathHeart').style.display = "none";
-
+	document.getElementById('deathHeartChild1').style.display = "none";
+	document.getElementById('deathHeartChild2').style.display = "none";
 }
 function die() {
 	location.reload()
 }	
-function victory5() {
-	document.getElementById('divlvl5').style.display = "none";
-	document.getElementById('victoryText').innerHTML = "thats the end of the game for now";
-}
 function leftTheEntireGame() {
 	if (itsOKtoLeave === "no") {
 		loseLife();
 	}
+}
+function victory5() {
+	document.getElementById('divlvl5').style.display = "none";
+	document.getElementById('divlvl6').style.display = "block";
+	itsOKtoLeave = "yes";
+	document.getElementById('background').style.backgroundImage= "none";
+	document.getElementById('theEntireGame').style.width= "50%";
+	document.getElementById('theEntireGame').style.height = "80%";
 }	
+function victory6() {
+	document.getElementById('divlvl6').style.display = "none";
+	document.getElementById('divlvl7').style.display = "block";
+	document.getElementById('theEntireGame').style.width= "30%";
+	document.getElementById('theEntireGame').style.height = "70%";
+}
+function killChild1(){
+	document.getElementById('child1').style.display = "none";
+	document.getElementById('deathHeartChild1').style.display = "inline";
+	setTimeout(stopHeartDying, 1170);
+}
+function killChild2(){
+	document.getElementById('child2').style.display = "none";	
+	document.getElementById('deathHeartChild2').style.display = "inline";
+	setTimeout(stopHeartDying, 1170);
+}
+var childrenkilled = 0
+function victory7check(){
+	childrenkilled += 1
+	if (childrenkilled === 2) {		
+		document.getElementById('victoryText').innerHTML = "you monster";
+		setTimeout(victory7, 1500);
+		setTimeout(endVictory, 1500);
+		Victory(); 
+	}
+}
+function victory7() {
+		document.getElementById('divlvl7').style.display = "none";
+		document.getElementById('divlvl8').style.display = "block";
+		document.getElementById('theEntireGame').style.width= "30%";
+		document.getElementById('theEntireGame').style.height = "70%";
+		document.getElementById('victoryText').innerHTML = "victory";
+}
